@@ -1,0 +1,31 @@
+diff --git a/categories.sh b/categories.sh
+index 5eff8da..341ac15 100644
+--- a/categories.sh
++++ b/categories.sh
+@@ -191,10 +191,10 @@ GoNotoCurrent=(
+     "NotoSansNushuSubset-Regular.ttf" # Not exactly contemporary use but just 402 glyphs
+     "NotoSansMiao-Regular.ttf"
+     # Common for all scripts
+-    "NotoSansSymbols-Regular.ttf"
+-    "NotoSansSymbols2-Regular.ttf"
+-    "NotoSansMathSubset-Regular.ttf"
+-    "NotoMusic-Regular.ttf"
++    #"NotoSansSymbols-Regular.ttf"
++    # "NotoSansSymbols2-Regular.ttf"
++    # "NotoSansMathSubset-Regular.ttf"
++    # "NotoMusic-Regular.ttf"
+ )
+ 
+ GoNotoAfricaMiddleEast=(
+diff --git a/helper.sh b/helper.sh
+index 519dc6e..b74a8ad 100644
+--- a/helper.sh
++++ b/helper.sh
+@@ -304,6 +304,7 @@ create_korean_hangul_subset() {
+     codepoints+="U+3130-318F," # Hangul compatibility jamo
+     codepoints+="U+A960-A97F," # Hangul jamo extended-A
+     codepoints+="U+D7B0-D7FF," # Hangul jamo extended-B
++    codepoints+="U+AC00-D7A3," # Hangul syllables
+ 
+     cd cache/
+ 
